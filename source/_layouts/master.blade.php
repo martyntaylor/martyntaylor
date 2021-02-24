@@ -18,7 +18,7 @@
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
         @if ($page->production)
-            <!-- Insert analytics code here -->
+            <script async defer data-domain="adjustedstudio.com" src="https://stats.martyntaylor.com/js/index.js"></script>
         @endif
 
         <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Mulish:wght@400;500;600;700;800;900" rel="stylesheet">
@@ -47,14 +47,14 @@
 
         @include('_nav.menu-responsive')
 
-        <main role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
-            @yield('body')
-        </main>
+
+        @yield('body')
+
 
         <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
             <ul class="flex flex-col md:flex-row justify-center list-none">
                 <li class="md:mr-2">
-                    &copy; <a href="https://tighten.co" title="Tighten website">Martyn Taylor</a> {{ date('Y') }}.
+                    &copy; <a href="https://www.martyntaylor.com">Martyn Taylor</a> {{ date('Y') }}.
                 </li>
 
             </ul>
