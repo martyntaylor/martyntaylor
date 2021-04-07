@@ -45,7 +45,7 @@ module.exports = {
         'lg': '0 -1px 27px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.08)',
       }
     },
-    fontSize: {
+   /* fontSize: {
       'xs': '.8rem',
       'sm': '.925rem',
       'base': '1rem',
@@ -56,7 +56,7 @@ module.exports = {
       '4xl': '2.125rem',
       '5xl': '2.625rem',
       '6xl': '10rem',
-    },
+    }, */
   },
   variants: {
     borderRadius: ['responsive', 'focus'],
@@ -64,6 +64,7 @@ module.exports = {
     width: ['responsive', 'focus']
   },
   plugins: [
+    require('@tailwindcss/ui'),
     function({ addUtilities }) {
       const newUtilities = {
         '.transition-fast': {

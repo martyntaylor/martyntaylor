@@ -8,6 +8,7 @@ pagination:
 @extends('_layouts.master')
 
 @section('body')
+<div role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
     
     <h1>Posts</h1>
 
@@ -47,4 +48,5 @@ pagination:
             @endif
         </nav>
     @endif
+</div>
 @stop
