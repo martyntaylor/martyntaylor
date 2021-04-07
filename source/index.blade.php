@@ -50,7 +50,7 @@
             Experience
           </h2>
           <p class="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
-            16 years experiance working in both agencies and internal development teams. Led teams and managed departments as well as attaining an AgilePM certficiation.
+            16 years experience working in both agencies and internal development teams. Led teams and managed departments as well as attaining an AgilePM certification.
           </p>
           <p class="mt-3 text-xl leading-7 text-gray-500 sm:mt-4">
             Worked with a variety of different technologies on various sized projects, from small local business, to international ecommerce sites with £60+ million yearly sales & 100+ million pageviews.
@@ -153,59 +153,69 @@
         </div>
     </div>
 </div>
-<div role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6 mt-32">
-    <h2 class="text-3xl leading-9 font-semibold text-gray-900 sm:text-4xl sm:leading-10">
-        Certification &amp; Education
-    </h2>
 
-    <div class="w-full mb-8">
-        <h3 class="text-xl leading-7 font-semibold text-gray-900  mt-0 mb-1">
-            <a href="https://www.youracclaim.com/badges/65120bdc-caf8-489d-afda-acc640ad51a6/linked_in_profile" rel="nofollow" target="_blank">AgilePM® Practitioner</a>
-        </h3>
+<div class=" w-full py-16">
+    <div class="flex-auto w-full container max-w-4xl mx-auto px-6">
+        <div>
+            <h2 class="text-3xl leading-9 font-semibold text-gray-900 sm:text-4xl sm:leading-10">
+                Certification &amp; Education
+            </h2>
+        </div>
 
-        <p class="my-1">APMG International</p>
 
-        <p class="text-gray-500 text-xs uppercase tracking-wider my-0">
-            July 2016
-        </p>
-    </div>
+        <div class="mt-12 grid gap-16 lg:grid-cols-3 lg:gap-x-12 lg:gap-y-10">
+            <div>
+                <div class="items-center">
+                    <h3 class="text-xl leading-7 font-semibold text-gray-900  mt-0 mb-1">
+                        <a href="https://www.youracclaim.com/badges/65120bdc-caf8-489d-afda-acc640ad51a6/linked_in_profile" rel="nofollow" target="_blank">AgilePM® Practitioner</a>
+                    </h3>
 
-    <hr class="border-b my-8">
+                    <p class="my-1">APMG International</p>
 
-    <div class="w-full mb-8">
-        <h3 class="text-xl leading-7 font-semibold text-gray-900  mt-0 mb-1">
-            <a href="https://www.youracclaim.com/badges/3b991978-a11e-45ee-b207-d3b7e4b0b3ca/linked_in_profile" rel="nofollow" target="_blank">AgilePM® Foundation</a>
-        </h3>
+                    <p class="text-gray-500 text-xs uppercase tracking-wider my-0">
+                        July 2016
+                    </p>
+                </div>
+            </div>
 
-        <p class="my-1">APMG International</p>
+            <div>
+                <div class="items-center">
+                    <h3 class="text-xl leading-7 font-semibold text-gray-900  mt-0 mb-1">
+                        <a href="https://www.youracclaim.com/badges/3b991978-a11e-45ee-b207-d3b7e4b0b3ca/linked_in_profile" rel="nofollow" target="_blank">AgilePM® Foundation</a>
+                    </h3>
 
-        <p class="text-gray-500 text-xs uppercase tracking-wider my-0">
-            July 2016
-        </p>
-    </div>
+                    <p class="my-1">APMG International</p>
 
-    <hr class="border-b my-8">
+                    <p class="text-gray-500 text-xs uppercase tracking-wider my-0">
+                        July 2016
+                    </p>
+                </div>
+            </div>
 
-    <div class="w-full mb-8">
-        <h3 class="text-xl leading-7 font-semibold text-gray-900  mt-0 mb-1">
-            BSc Information System Design
-        </h3>
+            <div>
+                <div class="items-center">
+                    <h3 class="text-xl leading-7 font-semibold text-gray-900  mt-0 mb-1">
+                        BSc Information System Design
+                    </h3>
 
-        <p class="my-1">University of Central Lancashire</p>
+                    <p class="my-1">University of Central Lancashire</p>
 
-        <p class="text-gray-500 text-xs uppercase tracking-wider my-0">
-            2001 - 2004
-        </p>
+                    <p class="text-gray-500 text-xs uppercase tracking-wider my-0">
+                        2001 - 2004
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org/",
-      "@type": "WebSite",
-      "name": "Martyn Taylor",
-      "url": "https://www.martyntaylor.com/",
-    }
-    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "name": "Martyn Taylor",
+  "url": "https://www.martyntaylor.com/",
+}
+</script>
 
 @stop
