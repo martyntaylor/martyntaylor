@@ -18,7 +18,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'brand-red': '#ff2d1f',
+        'brand-red': '#FF556D',
+        'brand-green': '#1597B0',
+        'brand-blue': '#2F3F63',
+        'brand-blue-text': '#424761',
       },  
       fontFamily: {
         sans: [
