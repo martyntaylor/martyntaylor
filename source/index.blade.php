@@ -5,42 +5,47 @@
 <div role="main" class="flex-auto w-full container max-w-4xl mx-auto py-16 px-6">
    <p class="text-center text-5xl leading-snug block mb-24 font-semibold">Hi! I'm Martyn.  I'm an experienced Web Developer & AgilePM, based in Preston, UK.</p>
 
-    <h2 class="text-3xl leading-9 font-semibold text-gray-900 sm:text-4xl sm:leading-10">
-        Latest Posts
-    </h2>
 
-    @foreach ($posts->where('featured', true) as $featuredPost)
-        <div class="w-full mb-8">
-            @if ($featuredPost->cover_image)
-                <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->title }} cover image" class="mb-6">
+    @if(!$posts->where('featured', true)->isEmpty())
+
+        <h2 class="text-3xl leading-9 font-semibold text-gray-900 sm:text-4xl sm:leading-10">
+            Latest Posts
+        </h2>
+
+        @foreach ($posts->where('featured', true) as $featuredPost)
+            <div class="w-full mb-8">
+                @if ($featuredPost->cover_image)
+                    <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->title }} cover image" class="mb-6">
+                @endif
+
+                <p class="text-gray-500 text-xs uppercase tracking-wider my-0">
+                    {{ $featuredPost->getDate()->format('jS F Y') }}
+                </p>
+
+                <h3 class="my-0 text-xl leading-7 font-semibold text-gray-900  mt-0 mb-1">
+                    <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="text-gray-900 font-semibold">
+                        {{ $featuredPost->title }}
+                    </a>
+                </h3>
+                @if ($featuredPost->categories)
+                    @foreach ($featuredPost->categories as $i => $category)
+                        <a
+                            href="{{ '/blog/categories/' . $category }}"
+                            title="View posts in {{ $category }}"
+                            class="inline-block bg-brand-red leading-loose tracking-wide text-white hover:text-white uppercase text-xs rounded mr-4 px-2 pt-px"
+                        >{{ $category }}</a>
+                    @endforeach
+                @endif
+
+                <p class="my-4">{!! $featuredPost->getExcerpt() !!}</p>
+            </div>
+
+            @if (! $loop->last)
+                <hr class="border-b my-8">
             @endif
+        @endforeach
 
-            <p class="text-gray-500 text-xs uppercase tracking-wider my-0">
-                {{ $featuredPost->getDate()->format('jS F Y') }}
-            </p>
-
-            <h3 class="my-0 text-xl leading-7 font-semibold text-gray-900  mt-0 mb-1">
-                <a href="{{ $featuredPost->getUrl() }}" title="Read {{ $featuredPost->title }}" class="text-gray-900 font-semibold">
-                    {{ $featuredPost->title }}
-                </a>
-            </h3>
-            @if ($featuredPost->categories)
-                @foreach ($featuredPost->categories as $i => $category)
-                    <a
-                        href="{{ '/blog/categories/' . $category }}"
-                        title="View posts in {{ $category }}"
-                        class="inline-block bg-brand-red leading-loose tracking-wide text-white hover:text-white uppercase text-xs rounded mr-4 px-2 pt-px"
-                    >{{ $category }}</a>
-                @endforeach
-            @endif
-
-            <p class="my-4">{!! $featuredPost->getExcerpt() !!}</p>
-        </div>
-
-        @if (! $loop->last)
-            <hr class="border-b my-8">
-        @endif
-    @endforeach
+    @endif
 
 </div>
 <div class=" w-full bg-gray-100 py-16">
