@@ -76,7 +76,7 @@
             </div>
             <div class="block">
               <p class="mt-3 text-sm leading-6 text-gray-500">
-                Back to my first love of coding.  Working on the old bespoke system, and along with the team modernising it into Laravel as well as introducing new features - user account, auctions, taxonomy.
+                Back to my first love of coding.  Working on the old bespoke system, and along with the team modernising it into Laravel as well as introducing new features - user account, auctions, taxonomy. Responsible for running sprints & speccing tasks for the team along with the Engineering & Product Directors.  Made Tech Lead in March 2022.
               </p>
             </div>
           </div>
